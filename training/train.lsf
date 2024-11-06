@@ -1,0 +1,23 @@
+#!/bin/bash
+#BSUB -J train_EGFR
+#BSUB -oo train_EGFR.out
+#BSUB -n 24
+#BSUB -R "span[ptile=4]"
+#BSUB -R affinity[core(16)]
+#BSUB -R rusage[mem=150G]
+#BSUB -gpu num=4
+
+SCRIPT="train.py --tilesize 224 --k_per_gpu 96 --optimizer adamw --lr 1e-06 --warmup_epochs 2 --nepochs 20 --workers 10 --save_freq 2 --use_amp 1 --target EGFR_KD --drop 0.5 --pos_weight 0.7"
+HOSTLIST=`cut -d ' ' -f1 $LSB_AFFINITY_HOSTFILE |  sort| uniq -c | awk '{print $2}'`
+NHOST=`echo "$HOSTLIST" | wc -w`
+NPPN=`cut -d ' ' -f1 $LSB_AFFINITY_HOSTFILE |  sort| uniq -c | awk 'NR==1{print $1}'`
+
+PCOMMAND="torchrun"
+PCOMMAND="$PCOMMAND --nproc_per_node=$NPPN"
+PCOMMAND="$PCOMMAND --nnodes=$NHOST"
+PCOMMAND="$PCOMMAND --rdzv_id=200"
+PCOMMAND="$PCOMMAND --rdzv_backend=c10d"
+PCOMMAND="$PCOMMAND --rdzv_endpoint=$HOSTNAME:29400"
+PCOMMAND="$PCOMMAND $SCRIPT"
+echo "$PCOMMAND"
+blaunch -z "$HOSTLIST" conda run --no-capture-output -n H100NVL $PCOMMAND
