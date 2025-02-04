@@ -98,6 +98,7 @@ MOLECULAR_TEST_NAME="EGFR via Idylla"
 "$RSCRIPT_PATH" "$REPO_PATH/filter_molecular_for_EGFR.R" \
     --input_csv "$MOLECULAR_WATCHER_CSV" \
     --directory_out "$BASE_DIR/slides_to_run" \
+    --slide_data_dir <PATH_TO_SLIDE_DAILY_MANIFESTS> \
     --test_to_filter $MOLECULAR_TEST_NAME \
     --completed "$EGFR_RESULTS_CSV"
 
