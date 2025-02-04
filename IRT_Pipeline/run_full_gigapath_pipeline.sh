@@ -22,8 +22,8 @@
 #   --repo_path      : Path to the cloned Git repository containing the scripts.
 # 
 # Example Usage:
-# ./run_pipeline.sh --base_dir /path/to/base --python_path /usr/bin/python3 \
-#                   --rscript_path /usr/bin/Rscript --repo_path /path/to/repo
+# ./run_full_gigapath_pipeline.sh --base_dir /your/production/run_EGFR --python_path /your_anaconda3/envs/irt_env/python \
+#                   --rscript_path /your_anaconda3/envs/irt_env/Rscript --repo_path /path/to/repo
 # ===============================================================
 # In practice is run as a cron job hourly to run every hour or can be 
 # run manually as needed. The Results will then be generated automatically,
@@ -84,6 +84,7 @@ MOLECULAR_WATCHER_CSV="$BASE_DIR/molecular_watcher/Mnumber_Snumber_block_2025.cs
 EGFR_RESULTS_CSV="$BASE_DIR/EGFR_results/gigapath_results.csv"
 SLIDES_TO_PROCESS_CSV="$BASE_DIR/slides_to_run/slides_to_processes.csv"
 MOLECULAR_TEST_NAME="EGFR via Idylla"
+PATH_TO_SLIDE_DAILY_MANIFESTS="/your/production/slide_data"
 
 # Run molecular accession watcher
 # This assumes a specific ACCESSION_NUMBER format starting with "M25-" and incrementing by 1
@@ -98,7 +99,7 @@ MOLECULAR_TEST_NAME="EGFR via Idylla"
 "$RSCRIPT_PATH" "$REPO_PATH/filter_molecular_for_EGFR.R" \
     --input_csv "$MOLECULAR_WATCHER_CSV" \
     --directory_out "$BASE_DIR/slides_to_run" \
-    --slide_data_dir <PATH_TO_SLIDE_DAILY_MANIFESTS> \
+    --slide_data_dir $PATH_TO_SLIDE_DAILY_MANIFESTS \
     --test_to_filter $MOLECULAR_TEST_NAME \
     --completed "$EGFR_RESULTS_CSV"
 
