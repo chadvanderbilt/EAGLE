@@ -23,7 +23,7 @@
 # 
 # Example Usage:
 # ./run_full_gigapath_pipeline.sh --base_dir /your/production/run_EGFR --python_path /your_anaconda3/envs/irt_env/python \
-#                   --rscript_path /your_anaconda3/envs/irt_env/Rscript --repo_path /path/to/repo
+#                   --rscript_path /your_anaconda3/envs/irt_env/Rscript --repo_path /path/to/repo/IRT_Pipeline
 # ===============================================================
 # In practice is run as a cron job hourly to run every hour or can be 
 # run manually as needed. The Results will then be generated automatically,
