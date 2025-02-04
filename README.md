@@ -7,7 +7,6 @@ Repository in Support of EAGLE Submission
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/chadvanderbilt/EAGLE.git
-   cd EAGLE/IRT_Pipeline
    ```
 
 2. **Create and Activate a Conda Environment:**
