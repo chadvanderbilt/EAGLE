@@ -13,9 +13,9 @@
 # - Example cron entry: `30 * * * * /path/to/this_script.sh`
 
 # Set the base path for logs and outputs
-BASE_PATH="/home/chad/production"
+BASE_PATH="/your/production"
 LOG_DIR="$BASE_PATH/logs/irt_monitor"
-SCRIPT_DIR="$BASE_PATH/scripts"
+SCRIPT_DIR="/path/to/repo/IRT_Pipeline"
 OUTPUT_DIR="$BASE_PATH/slide_data"
 
 # Create necessary directories if they don't exist
