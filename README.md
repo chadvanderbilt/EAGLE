@@ -86,7 +86,8 @@ The scripts assume the following directory structure for outputs and logs:
 ```
 
 
-Ensure these directories exist or are correctly specified in the shell scripts. Adjust paths as needed for your environment.
+Ensure these directories exist or are correctly specified in the shell scripts. Adjust paths as needed for your environment. 
+Our laboratory has API endpoints available for Real Time data.  If such data is available via database then adjust as needed. 
 
 ## Logging
 
