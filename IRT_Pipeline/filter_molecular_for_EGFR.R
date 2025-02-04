@@ -30,7 +30,7 @@
 # - --slide_data_dir: Directory containing the slide data manifests.
 #
 # **Usage Example:**
-# Rscript script.R --input_csv path/to/input.csv --directory_out path/to/output --test_to_filter EGFR --slide_data_dir /home/chad/production/slide_data
+# Rscript script.R --input_csv path/to/input.csv --directory_out path/to/output --test_to_filter EGFR --slide_data_dir /your/production/slide_data
 #%%
 
 # Load necessary libraries
