@@ -28,6 +28,12 @@ We fine-tuned the tile-level encoder of [Prov-GigaPath](https://huggingface.co/p
 cd training
 bsub < train.lsf
 ```
+with lsf or for slurm hpc:
+
+```bash
+cd training
+sbatch train.slurm
+```
 To run correctly, the pipeline expects the path of two files to be included in the `training/datasets.py` script:
 - `slide_data.csv`: a file containing the name, path, target, and data split for each slide in the dataset.
 - `tile_data.csv`: a file containing the slide name, x, and y coordinates as well as the level (within the slide file) and a rescale factor for each tile in the dataset. The rescale factor may be necessary if the right magnification is not available in the slide.
