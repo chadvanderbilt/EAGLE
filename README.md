@@ -35,9 +35,40 @@ To run correctly, the pipeline expects the path of two files to be included in t
 To finetune GigaPath, access to their weights is necessary via HuggingFace. Package requirements in conda irt_env.
 
 
+## Deployment
 
+This section explains how to select the model thresholds for deployment in a new institution. We provide an example csv file: `deployment/test_data.csv`.
+The script `deployment/pretrial_tuning.py` illustrates the analysis we performed. To simulate the deployment of EAGLE one can do:
+```python
+import numpy as np
+import pandas as pd
+import utils
+df = pd.read_csv('example_data.csv')
+utils.simulation(df)
+```
+
+To evaluate the performance of the assisted workflow after selecting the thresholds one can do:
+```python
+import numpy as np
+import pandas as pd
+import utils
+df = pd.read_csv('example_data.csv')
+threshold_npv = 0.023
+threshold_ppv = 0.997
+utils.get_performance_assisted_bootstrapped(df, th0=[threshold_npv], th1=[threshold_ppv], n=1000, target_col='target', rapid_col='rapid', eagle_col='score')
+```
+
+More details about parameters of these functions can be found by:
+```python
+import utils
+help(utils.simulation)
+help(utils.plot_simulation)
+help(utils.get_performance_assisted_bootstrapped)
+```
 
 ## Running the IRT Pipeline
+
+This section explains how to set up and run the IRT Pipeline for monitoring and processing scanned slides in real-time. The repository is hosted at [EAGLE GitHub Repository](https://github.com/chadvanderbilt/EAGLE.git) and the relevant shell scripts are located in the `IRT_Pipeline` subfolder.
 
 ### 1. **Monitoring Script (`run.sh`)**
 
@@ -68,7 +99,7 @@ To run the full pipeline every hour on the hour, add the following to your cront
 0 * * * * /path/to/EAGLE/IRT_Pipeline/run_full_gigapath_pipeline.sh
 ```
 
-## Directory Structure
+### Directory Structure
 
 The scripts assume the following directory structure for outputs and logs:
 
@@ -89,11 +120,11 @@ The scripts assume the following directory structure for outputs and logs:
 Ensure these directories exist or are correctly specified in the shell scripts. Adjust paths as needed for your environment. 
 Our laboratory has API endpoints available for Real Time data.  If such data is available via database then adjust as needed. 
 
-## Logging
+### Logging
 
 Each execution of the `run.sh` script will generate a log file in `/your/production/logs/irt_monitor/`, with filenames formatted as `YYYY-MM-DD_HH-MM-SS.log`.
 
-## Example Run
+### Example Run
 
 To manually execute the monitoring script and generate manifests:
 ```bash
@@ -104,6 +135,3 @@ To manually execute the full pipeline script:
 ```bash
 bash /path/to/EAGLE/IRT_Pipeline/run_full_gigapath_pipeline.sh
 ```
-
-
-This section explains how to set up and run the IRT Pipeline for monitoring and processing scanned slides in real-time. The repository is hosted at [EAGLE GitHub Repository](https://github.com/chadvanderbilt/EAGLE.git) and the relevant shell scripts are located in the `IRT_Pipeline` subfolder.
