@@ -41,10 +41,10 @@ To run correctly, the pipeline expects the path of two files to be included in t
 To finetune GigaPath, access to their weights is necessary via HuggingFace. Package requirements in conda irt_env.
 
 
-## Deployment
+## Model Calibration
 
-This section explains how to select the model thresholds for deployment in a new institution. We provide an example csv file: `deployment/test_data.csv`.
-The script `deployment/pretrial_tuning.py` illustrates the analysis we performed. To simulate the deployment of EAGLE one can do:
+This section explains how to select the model thresholds for deployment in a new institution. We provide an example csv file: `calibration/test_data.csv`.
+The script `calibration/pretrial_tuning.py` illustrates the analysis we performed. To simulate the deployment of EAGLE one can do:
 ```python
 import numpy as np
 import pandas as pd
