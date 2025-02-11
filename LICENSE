@@ -1,19 +1,51 @@
-Custom License for EAGLE
+EAGLE Terms of Use  
 
-Copyright © 2024 Memorial Sloan Kettering Cancer Center (MSKCC)
-All rights reserved.
+PLEASE READ THIS DOCUMENT CAREFULLY BEFORE YOU ACCESS OR USE EAGLE. BY ACCESSING ANY PORTION OF EAGLE, YOU AGREE TO BE BOUND BY THE TERMS AND CONDITIONS SET FORTH BELOW. IF YOU DO NOT WISH TO BE BOUND BY THESE TERMS AND CONDITIONS, PLEASE DO NOT ACCESS EAGLE. 
 
-1. License Grant (Non-Commercial Use Only):
-Permission is hereby granted, free of charge, to any individual or organization obtaining a copy of this software and associated documentation files (the "Software"), to use, copy, modify, merge, publish, and distribute the Software, solely for non-commercial purposes, subject to the following conditions:
+EAGLE is developed and maintained by Memorial Sloan Kettering Cancer Center (“MSK,” “we”, or “us”) to integrate clinical data from the Laboratory Information System API with whole slide images and to help analyze the images (“Content”). MSK may, from time to time, update the software and other content on https://github.com/chadvanderbilt/EAGLE/tree/main. MSK makes no warranties or representations, and hereby disclaims any warranties, express or implied, with respect to any of the Content, including as to the present accuracy, completeness, timeliness, adequacy, or usefulness of any of the Content. The entire risk as to the quality and performance of the Content is with you. By using this Content, you agree that MSK will not be liable for any losses or damages arising from your use of or reliance on the Content, or other websites or information to which this Content may be linked, including any general, special, incidental or consequential damages arising out of the use or inability to use the Content including, but not limited to, loss of data or data being rendered inaccurate or losses sustained by you or third parties or a failure of the Content to operate with any other software, programs, source code, etc.  
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-Any modifications or derivative works must clearly state that they are based on the original Software from Memorial Sloan Kettering Cancer Center.
-2. Restrictions (Commercial Use Prohibited):
+By making any use of the Content or submitting any information or data along with such to us, you authorize MSK to copy, modify, display, distribute, perform, use, publish, and otherwise exploit the same for any and all purposes, all without compensation to you, for as long as we decide (collectively, the "Use Rights"). In addition, you authorize MSK to grant any third party some or all of the Use Rights. By way of example, and not limitation, the Use Rights include the right for us to publish any data or information submitted in whole or in part for as long as we choose. By providing any data or information, you represent and warrant that (i) you own all rights in and to the information or data (including any related intellectual property rights) or have sufficient authority and right to provide the content and to grant the Use Rights; (ii) your submission of the information or data and grant to us of Use Rights do not violate or conflict with the rights of other persons, or breach your obligations to other persons; and (iii) the information or data does not include or contain any personally identifiable information (PII) or protected health information (PHI). 
 
-Commercial use of the Software, including but not limited to use in proprietary software, SaaS products, or for-profit ventures, is strictly prohibited without prior written permission and a valid commercial license from Memorial Sloan Kettering Cancer Center.
-To inquire about commercial licensing, please contact: [insert MSKCC contact email or licensing office information].
-3. Termination:
-Violation of these terms will result in the immediate termination of this license. Upon termination, you must cease all use and destroy any copies of the Software in your possession.
+DO NOT submit personally identifiable information (PII) or protected health information (PHI) in connection with any information or data or otherwise.   
 
-4. Disclaimer:
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL MEMORIAL SLOAN KETTERING CANCER CENTER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+You may use EAGLE, the underlying content, and any output therefrom for personal for academic research and noncommercial purposes only, including teaching and research at universities, colleges and other educational institutions. You may not use it for any other purpose.  You may not publish the Content in any capacity, including in scientific or academic journals or literature, or the results of such research, without MSK’s express written permission.  You may not otherwise redistribute or share the Content with any third party, in part or in whole, for any purpose, without the express written permission of MSK. You may not sell, resell, rent, lease or exchange the Content or any derivative works in any form for commercial purposes, for anything of value, or for any profit whatsoever, including any sort of monetary compensation. Any use of the Content for commercial purposes, including but not restricted to, running business operations, licensing, leasing or selling the Content, distributing the Content for use with commercial products, consulting activities, design of commercial hardware or software products, or a distributing to a commercial entity participating in research projects, requires MSK’s express written permission and provision of an appropriate license. 
+
+Without limiting the generality of the foregoing, you may not use any part of the EAGLE, the underlying Content or the output for any other purpose, including: 
+
+use or incorporation into a commercial product or towards the performance of a commercial service; 
+
+research use in a commercial setting; 
+
+diagnosis, treatment or use for patient care or the provision of medical services; or 
+
+generation of reports in a medical, laboratory, hospital or other patient care setting. 
+
+You may not copy, transfer, reproduce, modify, sell, sublicense, distribute or create derivative works of EAGLE or the underlying Content for any commercial purpose without the express permission of MSK. Any attempt otherwise to copy, transfer, modify, sublicense or distribute the Content is void, and will automatically terminate your rights under these Terms of Use. 
+
+The output of EAGLE and the underlying Content is not a substitute for professional medical help, judgment, or advice. Use of EAGLE does not create a physician-patient relationship or in any way make a person a patient of MSK. A physician or other qualified health provider should always be consulted for any health problem or medical condition.  
+
+Neither these Terms or Use nor the availability of EAGLE should be understood to create an obligation or expectation that MSK will continue to make EAGLE available.  MSK may discontinue or restrict the availability of EAGLE at any time.  MSK may also modify these Terms or Use at any time. 
+
+Any use of the Content is subject to MSK’s intellectual property rights, including any granted, pending or filed provisional patent applications, and any other patent, copyright, trademark, trade secret or other intellectual property rights. You shall ensure that your use of the Content is marked with the appropriate and original copyright notices in a prominent position in the order and manner provided by MSK. You shall abide by all applicable copyright laws and what are considered to be sound practices for copyright notice provisions. You shall not use or affix any copyright notices to the Content, including, without limitation, those that conflict with, confuse, or negate the notices MSK provides and requires hereunder. MSK respects the intellectual property rights of others, just as it expects others to respect its intellectual property. If you believe that any content (including data or information uploaded by you) to the Content or other activity taking place on the website where it is hosted constitutes infringement of a work protected by copyright, please notify us as follows: 
+
+Memorial Sloan Kettering Cancer Center 1275 York Avenue New York, NY 10065 
+
+Memorial Sloan Kettering Cancer Center 
+
+1275 York Avenue 
+
+New York, NY 10065 
+
+212-639-2000 
+
+Your notice must comply with the Digital Millennium Copyright Act (17 U.S.C. §512) (the "DMCA"). Upon receipt of a compliant notice, we will respond and proceed in accordance with the DMCA. 
+
+By using EAGLE, you consent to the jurisdiction and venue of the state and federal courts located in New York City, New York, USA, for any claims related to or arising from your use of EAGLE or your violation of these Terms of Use, and agree that you will not bring any claims against MSK that relate to or arise from the foregoing except in those courts.  
+
+If, as a consequence of a court judgment or allegation of patent infringement or for any other reason (not limited to patent issues), conditions are imposed on you (whether by court order, agreement or otherwise) that contradict the conditions of these Terms of Use, they do not excuse you from the conditions of these Terms of Use.  
+
+If any provision of these Terms of Use is held to be invalid or unenforceable, then such provision shall be struck and the remaining provisions shall be enforced. Headings are for reference purposes only and in no way define, limit, construe, or describe the scope or extent of such section. MSK’s failure to act with respect to a breach by you or others does not waive its right to act with respect to subsequent or similar breaches. This agreement and the terms and conditions contained herein set forth the entire understanding and agreement between MSK and you with respect to the subject matter hereof and supersede any prior or contemporaneous understanding, whether written or oral. 
+
+Inquiries about the Content should be directed to vanderbc@mskcc.org. 
+
+If you are interested in using EAGLE for purposes beyond those permitted by these Terms of Use, please contact vanderbc@mskcc.org to inquire concerning the availability of a license. 
