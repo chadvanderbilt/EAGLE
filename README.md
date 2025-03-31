@@ -11,15 +11,11 @@ Repository in Support of EAGLE Submission
 
 2. **Create and Activate a Conda Environment:**
    ```bash
-   conda create -n irt_env python=3.9
+   conda create -n irt_env python=3.9 --file requirements.txt
    conda activate irt_env
    ```
 
-3. **Install Required Dependencies:**
-   Use the `requirements.txt` file in the `IRT_Pipeline` folder to install all necessary Python packages.
-   ```bash
-   pip install -r requirements.txt
-   ```
+
 
 
 ## Training (Fine-Tuning)
